@@ -1,4 +1,9 @@
 /** @type {import('next').NextConfig} */
-const nextConfig = {};
+
+import "./lib/env/env.mjs";
+
+const nextConfig = {
+  reactStrictMode: true,
+};
 
 export default nextConfig;
