@@ -1,7 +1,12 @@
-import React from "react";
+import type { FC } from "react";
+import { MUIThemeProvider } from "@/provider";
 
-const ProviderLayout = () => {
-  return <div></div>;
+type Props = Readonly<{
+  children: React.ReactNode;
+}>;
+
+const ProviderLayout: FC<Props> = ({ children }) => {
+  return <MUIThemeProvider>{children}</MUIThemeProvider>;
 };
 
 export { ProviderLayout };
