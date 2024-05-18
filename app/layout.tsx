@@ -1,18 +1,16 @@
 import type { Metadata } from "next";
-
-//W import font for project
 import { Vazirmatn } from "next/font/google";
+import { ProviderLayout } from "./provider";
 
-//? import css for project
-import "@/styles/globals.css";
+import "./globals.css";
 
-import { ProviderLayout } from "@/provider";
+import { textData } from "./data";
 
 const vazirmatn = Vazirmatn({ subsets: ["arabic"] });
 
 export const metadata: Metadata = {
-  title: "خدمات بانکی و عمومی",
-  description: "توسعه داده شده توسط fardup",
+  title: textData.title,
+  description: textData.description,
 };
 
 type PropsRootLayout = Readonly<{

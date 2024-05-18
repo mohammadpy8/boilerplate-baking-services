@@ -1,5 +1,5 @@
 import type { FC } from "react";
-import { MUIThemeProvider } from "@/provider";
+import { MUIThemeProvider } from "./MUIThemeProvider";
 
 type Props = Readonly<{
   children: React.ReactNode;

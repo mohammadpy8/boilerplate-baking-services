@@ -1,12 +1,15 @@
-"use client";
-
-import { Box, useTheme } from "@mui/material";
 import type { FC } from "react";
+import { sendPost } from "./actions/sendPost";
 
 const HomePage: FC = () => {
-  const { palette } = useTheme();
-
-  return <Box bgcolor={palette.primaryColor?.last}>صفحه اصلی</Box>;
+  return (
+    <form action={sendPost}>
+      <input type="text" name="username" />
+      <br />
+      <input type="text" name="password" />
+      <button type="submit">send</button>
+    </form>
+  );
 };
 
 export default HomePage;
