@@ -1,7 +1,7 @@
 
 import { ThemeProvider, CssBaseline } from "@mui/material";
 import type { FC, PropsWithChildren } from "react";
-import { theme } from "../theme";
+import { theme } from "@/app/theme";
 
 type Props = PropsWithChildren;
 
